@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		4D9A12F926479936005DA62E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A12F826479936005DA62E /* AppDelegate.swift */; };
 		4D9A12FB26479936005DA62E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A12FA26479936005DA62E /* SceneDelegate.swift */; };
-		4D9A12FD26479936005DA62E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A12FC26479936005DA62E /* ViewController.swift */; };
+		4D9A12FD26479936005DA62E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A12FC26479936005DA62E /* MainViewController.swift */; };
 		4D9A130026479936005DA62E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A12FE26479936005DA62E /* Main.storyboard */; };
 		4D9A13022647993F005DA62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A13012647993F005DA62E /* Assets.xcassets */; };
 		4D9A13052647993F005DA62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A13032647993F005DA62E /* LaunchScreen.storyboard */; };
+		4D9A130D2647999E005DA62E /* Forca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A130C2647999E005DA62E /* Forca.swift */; };
+		4D9A130F264799CD005DA62E /* ResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A130E264799CD005DA62E /* ResultadoViewController.swift */; };
+		4DA310DF2648C25600C3E141 /* Palavra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA310DE2648C25600C3E141 /* Palavra.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D9A12F526479936005DA62E /* Jogo da Forca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jogo da Forca.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9A12F826479936005DA62E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D9A12FA26479936005DA62E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D9A12FC26479936005DA62E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D9A12FC26479936005DA62E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4D9A12FF26479936005DA62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D9A13012647993F005DA62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D9A13042647993F005DA62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D9A13062647993F005DA62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D9A130C2647999E005DA62E /* Forca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forca.swift; sourceTree = "<group>"; };
+		4D9A130E264799CD005DA62E /* ResultadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoViewController.swift; sourceTree = "<group>"; };
+		4DA310DE2648C25600C3E141 /* Palavra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palavra.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		4D9A12F726479936005DA62E /* Jogo da Forca */ = {
 			isa = PBXGroup;
 			children = (
+				4D9A1312264799F9005DA62E /* Controller */,
+				4D9A1311264799F0005DA62E /* View */,
+				4D9A1310264799E0005DA62E /* Model */,
 				4D9A12F826479936005DA62E /* AppDelegate.swift */,
 				4D9A12FA26479936005DA62E /* SceneDelegate.swift */,
-				4D9A12FC26479936005DA62E /* ViewController.swift */,
-				4D9A12FE26479936005DA62E /* Main.storyboard */,
 				4D9A13012647993F005DA62E /* Assets.xcassets */,
-				4D9A13032647993F005DA62E /* LaunchScreen.storyboard */,
 				4D9A13062647993F005DA62E /* Info.plist */,
 			);
 			path = "Jogo da Forca";
+			sourceTree = "<group>";
+		};
+		4D9A1310264799E0005DA62E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D9A130C2647999E005DA62E /* Forca.swift */,
+				4DA310DE2648C25600C3E141 /* Palavra.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D9A1311264799F0005DA62E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D9A13032647993F005DA62E /* LaunchScreen.storyboard */,
+				4D9A12FE26479936005DA62E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D9A1312264799F9005DA62E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D9A12FC26479936005DA62E /* MainViewController.swift */,
+				4D9A130E264799CD005DA62E /* ResultadoViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D9A12FD26479936005DA62E /* ViewController.swift in Sources */,
+				4D9A12FD26479936005DA62E /* MainViewController.swift in Sources */,
+				4D9A130D2647999E005DA62E /* Forca.swift in Sources */,
+				4D9A130F264799CD005DA62E /* ResultadoViewController.swift in Sources */,
 				4D9A12F926479936005DA62E /* AppDelegate.swift in Sources */,
 				4D9A12FB26479936005DA62E /* SceneDelegate.swift in Sources */,
+				4DA310DF2648C25600C3E141 /* Palavra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
